@@ -15,20 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import view
 from . import view2
-from . import view3
+from . import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view.index, name='index'),
-    path('about', view.about, name='about'),
-    path('facebook', view2.facebook, name='facebook'),
-    path('chatgpt', view3.chatgpt, name='chatgpt'),
-    path('w3school', view3.w3school, name='w3school'),
-    path('instagram', view3.instagram, name='instagram'),
-    path('cricbuzz', view3.cricbuzz, name='cricbuzz'),
-    path('flipcart', view3.flipcart, name='flipcart'),
-    path('mysite', view2.mysite, name='mysite'),
+    path('', index.index1, name='index'),
+    path('home', view2.home, name='home'),
+    path('analyzer', view2.analyzer, name='analyzer')
 
 ]
