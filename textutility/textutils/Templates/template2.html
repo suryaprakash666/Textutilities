@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>I am student of Ravenshaw university.</title>
+</head>
+<body>
+<h1>welcome to the text analyzer</h1>
+<form action='/analyzer' method='POST'> {% csrf_token %}
+    <textarea name="text" style="width: 1479px; height: 42px;"></textarea><br>
+    <input type="checkbox" name="removepunc">Remove punctuation<br>
+    <input type="checkbox" name="fullcaps">capitalize all charecter<br>
+    <button type='submit'>Analyze text</button>
+
+</form>
+
+</body>
+</html>

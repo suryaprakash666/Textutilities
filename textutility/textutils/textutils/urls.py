@@ -21,7 +21,6 @@ from . import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index.index1, name='index'),
-    path('home', view2.home, name='home'),
     path('analyzer', view2.analyzer, name='analyzer')
 
 ]
